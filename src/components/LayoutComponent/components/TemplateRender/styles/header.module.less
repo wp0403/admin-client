@@ -1,0 +1,69 @@
+.simple_header_simple {
+  display: flex;
+  align-items: center;
+}
+
+.simple_header_simple_link {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.simple_header_simple_title {
+  font-weight: bold;
+  font-size: 18px;
+  font-family: AlibabaPuHuiTi, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
+    sans-serif;
+  line-height: 64px;
+  letter-spacing: -0.18px;
+  white-space: nowrap;
+}
+
+.simple_header_simple_logo {
+  display: flex;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.simple_actions_box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.simple_actions_box_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding-top: 24px;
+
+  .simple_actions_item {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.simple_actions_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.simple_actions_item_hover:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 760px) {
+  .simple_header_simple_logo {
+    height: 26px;
+    margin-right: 0;
+  }
+}
